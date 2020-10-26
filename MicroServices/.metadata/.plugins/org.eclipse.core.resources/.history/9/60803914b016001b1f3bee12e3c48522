@@ -1,0 +1,5 @@
+package com.micro.springcloud.model;
+
+public class Coupon {
+
+}

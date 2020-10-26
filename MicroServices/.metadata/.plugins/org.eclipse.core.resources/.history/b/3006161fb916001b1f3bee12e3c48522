@@ -1,0 +1,13 @@
+package com.micro.springcloud.model;
+
+import java.math.BigDecimal;
+
+public class Coupon {
+
+	private Long id;
+	private String code;
+	private BigDecimal discount;
+	private String expDate;
+	
+	
+}
