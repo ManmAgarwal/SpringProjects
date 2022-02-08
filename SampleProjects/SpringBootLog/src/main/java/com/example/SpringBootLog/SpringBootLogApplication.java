@@ -10,11 +10,13 @@ public class SpringBootLogApplication {
 
 	static Logger log = Logger.getLogger("SpringBootLogApplication.class");
 	
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		SpringApplication.run(SpringBootLogApplication.class, args);
 		
-		log.log(Level.INFO,"Logging Info Message");
-		log.log(Level.SEVERE,"Logging Severe Message");
-		log.log(Level.WARNING,"Logging Warning Message");
+		for (int i=0; i<6000;i++) {
+			log.log(Level.INFO,"Logging Info Message");
+			log.log(Level.SEVERE,"Logging Severe Message");
+			log.log(Level.WARNING,"Logging Warning Message");
+		}
 	}
 }
